@@ -1,0 +1,118 @@
+/* Vertical Timeline Skills with Neon Nodes & Animated Lines */
+
+.skills-section {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #0f172a 60%, #8b5cf6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.skills-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 18px #38bdf8, 0 2px 8px #8b5cf6;
+}
+
+.skills-timeline {
+  position: relative;
+  width: 340px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, #38bdf8 0%, #8b5cf6 100%);
+  transform: translateX(-50%);
+  border-radius: 3px;
+  animation: pulseLine 2s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes pulseLine {
+  0% { box-shadow: 0 0 12px #38bdf8; }
+  100% { box-shadow: 0 0 24px #8b5cf6; }
+}
+
+.timeline-skill {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 38px 0;
+  z-index: 1;
+}
+
+.timeline-node {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8 60%, #8b5cf6 100%);
+  /* Removed box-shadow for no glow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 700;
+  border: 3px solid #fff;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.timeline-node:hover {
+  transform: scale(1.18);
+  box-shadow: 0 0 32px #8b5cf6, 0 0 16px #38bdf8;
+}
+
+.timeline-label {
+  background: rgba(31,41,55,0.85);
+  color: #e0e7ef;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 12px;
+  margin-left: 24px;
+  box-shadow: 0 2px 12px #38bdf833;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.timeline-skill:nth-child(even) .timeline-label {
+  margin-left: 0;
+  margin-right: 24px;
+  background: rgba(139,92,246,0.18);
+  color: #fff;
+}
+
+.timeline-skill:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 500px) {
+  .skills-timeline {
+    width: 98vw;
+    padding: 10px 0;
+  }
+  .timeline-label {
+    font-size: 0.95rem;
+    padding: 7px 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .timeline-node {
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+}

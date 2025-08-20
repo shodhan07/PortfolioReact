@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Header */
+.HeaderforP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+/* Logo/Title */
+.HeaderforP h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #38bdf8, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.HeaderforP h1:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.Menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.Menu a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f1f5f9;
+  transition: color 0.3s ease;
+}
+
+.Menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #38bdf8, #6366f1, #a855f7);
+  transition: width 0.3s ease;
+}
+
+.Menu a:hover {
+  color: #38bdf8;
+}
+
+.Menu a:hover::after {
+  width: 100%;
+}
