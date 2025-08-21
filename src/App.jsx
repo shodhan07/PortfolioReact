@@ -2,6 +2,7 @@ import './App.css'
 import About from './components/About'
 import Home from './components/Home'
 import Skills from './components/skills'
+import Contact from './components/contact'
 
 function App() {
   return (
@@ -39,8 +40,7 @@ function App() {
       </section>
 
       <section id="contact" className="section">
-        <h2>Contact</h2>
-        <p>Coming soon...</p>
+        <Contact />
       </section>
 
       <section id="resume" className="section">
