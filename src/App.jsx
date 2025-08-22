@@ -3,7 +3,8 @@ import About from './components/About'
 import Home from './components/Home'
 import Skills from './components/skills'
 import Contact from './components/contact'
-
+import Projects from './components/projects'
+import Achivements from './components/achivements'
 function App() {
   return (
     <>
@@ -14,9 +15,9 @@ function App() {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
+          <a href="#achivements">Achivements</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="#resume">Resume</a>
         </nav>
       </header>
 
@@ -34,21 +35,18 @@ function App() {
         <Skills/>
       </section>
 
+      <section id="achivements" className="section">
+        <Achivements />  
+      </section>
+      
       <section id="projects" className="section">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
+        <Projects />
       </section>
 
       <section id="contact" className="section">
         <Contact />
       </section>
 
-      <section id="resume" className="section">
-        <h2>Resume</h2>
-        <p>
-          Download my resume <a href="/resume.pdf" target="_blank" rel="noreferrer">here</a>.
-        </p>
-      </section>
     </>
   )
 }

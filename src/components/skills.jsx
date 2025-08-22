@@ -20,11 +20,11 @@ const skills = [
   },
   {
     name: "Nintex K2 Automation",
-    logo: "https://seeklogo.com/images/N/nintex-k2-logo-43F5678C2D-seeklogo.com.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt57eDHWkbWnQXyatrBc45QcUuXkorPxphml_igX7La87EK11SrUZH7a8dLzFy7IrbegE&usqp=CAU",
   },
   {
     name: "ServiceNow",
-    logo: "https://cdn.worldvectorlogo.com/logos/servicenow-1.svg",
+    logo: "https://cdn-public.softwarereviews.com/production/favicons/offerings/4749/original/ServiceNow_fav.png",
   },
   {
     name: "ReactJS",
@@ -39,25 +39,13 @@ const skills = [
 function Skills() {
   return (
     <section id="skills" className="skills-section">
-      <h2 className="skills-title">⚡ My Skills</h2>
-      <div className="skills-timeline">
-        <div className="timeline-line"></div>
+      <h2 className="skills-title">My Skills</h2>
+      <div className="skills-grid">
         {skills.map((skill, index) => (
-          <div className="timeline-skill" key={index}>
-            <div className="timeline-node">
-              <img
-                src={skill.logo}
-                alt={skill.name}
-                style={{
-                  width: "70%",
-                  height: "70%",
-                  objectFit: "contain",
-                  borderRadius: "50%",
-                  background: "rgba(255,255,255,0.08)",
-                }}
-              />
-            </div>
-            <div className="timeline-label">{skill.name}</div>
+          <div className="skill-card" key={index}>
+            <div className="skill-glow"></div>
+            <img src={skill.logo} alt={skill.name} className="skill-logo" />
+            <p className="skill-name">{skill.name}</p>
           </div>
         ))}
       </div>
