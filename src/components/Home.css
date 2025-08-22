@@ -12,7 +12,7 @@
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: calc(100vh - 0px);
+  min-height: calc(60vh - 0px);
   display: grid;
   place-items: center;
   padding: 96px 24px;
