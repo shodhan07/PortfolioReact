@@ -1,59 +1,114 @@
-import './About.css'
+import "./About.css";
 
 function About() {
+  const education = [
+    {
+      year: "2021 - 2025",
+      title: "New Horizon College of Engineering",
+      description: "B.E in Information Science, CGPA: 9.07",
+    },
+    {
+      year: "2020",
+      title: "Alvas Education Foundation, Moodbidri",
+      description: "12th Grade, 98.33%",
+    },
+    {
+      year: "2018",
+      title: "Poorna Prajna Education Centre",
+      description: "10th Grade, 93.92%",
+    },
+  ];
+
+  const experience = [
+    {
+      year: "2024 - Present",
+      title: "Internship at Merck (K2 Developer Intern)",
+      details: [
+        "Worked on K2 workflows & automation",
+        "Integrated APIs using C# and SQL",
+        "Developed SmartObjects & Forms",
+      ],
+    },
+    {
+      year: "2024",
+      title: "Internship at Coding Raja Technologies",
+      details: [
+        "Built Resume Builder & Music Player projects",
+        "Worked with HTML, CSS, JS",
+        "Learned real-world project workflows",
+      ],
+    },
+  ];
+
   return (
-    <div className="about-container">
-      <h2 className="about-title">About Me</h2>
+    <section className="about" id="about">
+      <h2 className="about-title">
+        About <span>Me</span>
+      </h2>
 
-      <div className="about-content">
-        {/* Left Side - Text */}
-        <div className="about-text">
-          <p>
-            Hi, I’m <span className="highlight">Shodhan A K</span>, an aspiring 
-            <span className="highlight"> Web Developer & Problem Solver</span>.  
-            I’m passionate about building modern web applications, crafting 
-            seamless user experiences, and solving real-world problems with code. 🚀
-          </p>
+      {/* Intro */}
+      <div className="about-intro">
+        <p>
+          Hi, I’m <span className="highlight">Shodhan A K</span>, an aspiring
+          <span className="highlight"> Web Developer & Problem Solver</span>.
+          I’m passionate about building modern web applications, crafting
+          seamless user experiences, and solving real-world problems with code 🚀
+        </p>
+        <p>
+          With strong foundations in <span className="highlight">C++, SQL, JavaScript</span>,
+          and frameworks like <span className="highlight">React & NestJS</span>,
+          I thrive at the intersection of logic and creativity.
+        </p>
+      </div>
 
-          <p>
-            Currently pursuing my <span className="highlight">B.E in Information Science</span>, 
-            I have worked on projects ranging from 
-            <span className="highlight"> full-stack apps</span> to 
-            <span className="highlight"> automation workflows</span>.  
-            With a strong foundation in <span className="highlight">C++, SQL, JavaScript</span>, 
-            and frameworks like <span className="highlight">React & NestJS</span>, 
-            I thrive at the intersection of logic and creativity.
-          </p>
-
-          <p>
-            Beyond coding, I enjoy <span className="highlight">tech innovations</span>, 
-            exploring <span className="highlight">startups</span>, and 
-            working on ideas that create real impact. 🌟
-          </p>
+      {/* Timeline style split */}
+      <div className="about-timeline">
+        {/* Education Column */}
+        <div className="timeline-column">
+          <h3 className="column-title">🎓 Education</h3>
+          <div className="timeline">
+            {education.map((item, idx) => (
+              <div
+                key={idx}
+                className={`timeline-item ${idx % 2 === 0 ? "left" : "right"}`}
+              >
+                <div className="timeline-content">
+                  <span className="year">{item.year}</span>
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Right Side - Quick Info Cards */}
-        <div className="about-cards">
-          <div className="about-card">
-            <h3>🎓 Education</h3>
-            <p>New Horizon College of Engineering, Bengaluru</p>
-            <p><strong>CGPA:</strong> 9.02</p>
-          </div>
+        {/* Experience Column */}
+        <div className="timeline-column">
+          <h3 className="column-title">💼 Experience</h3>
+          <div className="timeline">
+            {experience.map((item, idx) => (
+              <div
+                key={idx}
+                className={`timeline-item ${idx % 2 === 0 ? "left" : "right"}`}
+              >
+                <div className="timeline-content">
+                  <span className="year">{item.year}</span>
+                  <h4>{item.title}</h4>
 
-          <div className="about-card">
-            <h3>💼 Experience</h3>
-            <p>K2 Developer Intern @ Merck</p>
-            <p>Worked on workflows, automation & SQL</p>
-          </div>
-
-          <div className="about-card">
-            <h3>⚡ Interests</h3>
-            <p>Web Development, AI, Problem Solving, Startups</p>
+                  {/* Detail box with arrow */}
+                  <div className="details-box">
+                    {item.details.map((detail, i) => (
+                      <p key={i}>• {detail}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
-export default About
+export default About;

@@ -1,0 +1,139 @@
+.achievements {
+  position: relative;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 120px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.achievements-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.achievements-title span {
+  color: #38bdf8;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.achievements-carousel {
+  display: flex;
+  gap: 35px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  perspective: 1200px;
+}
+
+.achievements-carousel::-webkit-scrollbar { display: none; }
+.achievements-carousel { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Card */
+.achievement-card {
+  flex: 0 0 280px;
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: preserve-3d;
+}
+
+.achievement-card:hover {
+  transform: translateY(-15px) scale(1.07) rotateY(0deg);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.7);
+}
+
+.achievement-card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: #38bdf8;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #38bdf8;
+  color: #07121a;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+}
+
+.year {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.view-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: linear-gradient(90deg,#38bdf8,#6366f1);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.view-btn:hover {
+  background: linear-gradient(90deg,#6366f1,#38bdf8);
+  transform: scale(1.05);
+}
+
+/* Arrow Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(56,189,248,0.8);
+  border: none;
+  color: #07121a;
+  font-size: 2.2rem;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover { background: #38bdf8; }
+.carousel-btn.left { left: -30px; }
+.carousel-btn.right { right: -30px; }
+
+/* Background shapes */
+.carousel-bg-shapes {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(56,189,248,0.2), transparent 70%);
+  top: -150px;
+  left: -150px;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media(max-width: 700px) {
+  .achievement-card { flex: 0 0 220px; padding: 25px 15px; }
+  .carousel-btn.left { left: 0; }
+  .carousel-btn.right { right: 0; }
+}

@@ -39,7 +39,10 @@ const skills = [
 function Skills() {
   return (
     <section id="skills" className="skills-section">
-      <h2 className="skills-title">My Skills</h2>
+      <h2 className="skills-title">
+        <span>My</span> Skills
+      </h2>
+
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div className="skill-card" key={index}>
