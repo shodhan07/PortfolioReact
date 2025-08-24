@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./achievements.css";
+import "./Achievements.css";
 
 const Achievements = () => {
   const carouselRef = useRef(null);
@@ -8,9 +8,9 @@ const Achievements = () => {
   const scrollRight = () => carouselRef.current.scrollBy({ left: 320, behavior: "smooth" });
 
   const data = [
-    { title: "DSA Certificate", issuer: "Udemy", year: "2025", link: "https://www.udemy.com/certificate/dsa-example" },
+    { title: "Data Structures and Algorithms Certificate", issuer: "Udemy", year: "2025", link: "https://www.udemy.com/certificate/dsa-example" },
     { title: "ServiceNow Certified App Developer", issuer: "ServiceNow", year: "2025", link: "https://www.servicenow.com/certificate-example" },
-    { title: "Nintex K2 Automation IT Developer", issuer: "Merck / Nintex", year: "2025", link: "https://www.k2.com/certificate-example" },
+    { title: "Nintex K2 Automation IT Developer", issuer: "Nintex", year: "2025", link: "https://www.k2.com/certificate-example" },
     { title: "Coming Soon", issuer: "", year: "", link: "#" },
     { title: "Coming Soon", issuer: "", year: "", link: "#" },
     { title: "Coming Soon", issuer: "", year: "", link: "#" },

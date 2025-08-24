@@ -2,10 +2,10 @@ import { useEffect } from 'react'
 import './App.css'
 import About from './components/About'
 import Home from './components/Home'
-import Skills from './components/skills'
-import Contact from './components/contact'
-import Projects from './components/projects'
-import Achievements from './components/achievements'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
+import Projects from './components/Projects'
+import Achievements from './components/Achievements'
 
 function App() {
   useEffect(() => {
@@ -62,7 +62,7 @@ function App() {
         <Skills />
       </section>
 
-      <section id="achivements" className="section">
+      <section id="achievements" className="section">
         <Achievements />
       </section>
 
