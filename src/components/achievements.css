@@ -151,8 +151,8 @@
   }
 
   .achievements {
-    min-height: 90vh;   /* remove full-screen force */
-    padding: 60px 15px; /* moderate spacing */
+    min-height: 90vh;   
+    padding: 60px 15px; 
   }
 }
 
@@ -168,7 +168,7 @@
   }
 
   .achievements {
-    min-height: 90vh;   /* let content set height */
-    padding: 45px 12px; /* tighter padding for phones */
+    min-height: 90vh;   
+    padding: 45px 12px; 
   }
 }

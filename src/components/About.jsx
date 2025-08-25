@@ -22,11 +22,11 @@ function About() {
   const experience = [
     {
       year: "2024 - Present",
-      title: "Internship at Merck (K2 Developer Intern)",
+      title: "Internship at Merck (Intern)",
       details: [
         "Worked on K2 workflows & automation",
-        "Integrated APIs using C# and SQL",
-        "Developed SmartObjects & Forms",
+        "Developed ServiceNow catalog items and scripts",
+        "Worked with REST APIs, JavaScript, HTML, CSS",
       ],
     },
     {
@@ -50,13 +50,13 @@ function About() {
       <div className="about-intro">
         <p>
           Hi, I’m <span className="highlight">Shodhan A K</span>, an aspiring
-          <span className="highlight"> Web Developer & Problem Solver</span>.
+          <span className="highlight"> Software Developer & Problem Solver</span>.
           I’m passionate about building modern web applications, crafting
           seamless user experiences, and solving real-world problems with code 🚀
         </p>
         <p>
           With strong foundations in <span className="highlight">C++, SQL, JavaScript</span>,
-          and frameworks like <span className="highlight">React & NestJS</span>,
+          and frameworks like <span className="highlight">React</span>,
           I thrive at the intersection of logic and creativity.
         </p>
       </div>

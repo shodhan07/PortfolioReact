@@ -46,7 +46,7 @@ function Home() {
 
           <div className="hero-stats" aria-label="Highlights">
             <div className="stat">
-              <span className="stat-num">9.01</span>
+              <span className="stat-num">9.07</span>
               <span className="stat-label">CGPA</span>
             </div>
             <div className="stat">
