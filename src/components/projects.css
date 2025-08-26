@@ -1,14 +1,11 @@
 .projects-section {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #fff;
-  padding: 120px 20px; /* increased padding */
-  min-height: 120vh; /* ensures section feels tall */
+  padding: 120px 20px;
+  min-height: 120vh;
   text-align: center;
 }
 
-.projects-section h2 {
-  color: white;
-}
 .project-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -30,7 +27,7 @@
 
 .project-card {
   width: 320px;
-  height: 420px; /* taller height */
+  height: 420px;
   perspective: 1000px;
 }
 
@@ -100,6 +97,23 @@
   transform: scale(1.05);
 }
 
+/* Mobile-only button hidden by default */
+.mobile-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;         /* smaller width so it won’t overflow */
+    max-width: 350px;   /* safe upper limit */
+    margin: 15px auto;  /* keep it centered */
+    height: 280px;      /* increase height only for mobile */
+    box-sizing: border-box;
+    padding-right: 31px;
+  }
+}
+
+
 /* 📱 Mobile adjustments */
 @media (max-width: 600px) {
   .project-title {
@@ -108,30 +122,44 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* smaller min size */
+    grid-template-columns: repeat(2, 1fr); /* always 2 cards per row */
     gap: 15px;
   }
 
   .project-card {
-    width: 180px;
-    height: 250px; /* much smaller */
+    width: 100%;       /* take full width of grid cell */
+    max-width: 160px;  /* limit max width */
+    height: 300px;     /* taller cards */
+    perspective: none; /* disable 3D */
   }
 
-  .card-front,
+  .card-inner {
+    transform: none !important; /* no flip */
+  }
+
   .card-back {
-    padding: 10px;
-    font-size: 0.8rem;
+    display: none; /* hide back */
   }
 
-  .card-front h3,
-  .card-back h3 {
+  .card-front {
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .card-front h3 {
     font-size: 1rem;
+    margin-bottom: 6px;
   }
 
   .project-btn {
-    padding: 6px 14px;
-    font-size: 0.75rem;
+    padding: 8px 16px;
+    font-size: 0.8rem;
     border-radius: 6px;
+  }
+
+  /* show button inside front only on mobile */
+  .mobile-btn {
+    display: inline-block;
   }
 }
 
@@ -143,6 +171,7 @@
 
   .project-card {
     width: 100%; 
-    height: 220px; /* even shorter */
+    max-width: 100%; 
+    height: 280px; /* keep tall */
   }
 }

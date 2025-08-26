@@ -39,8 +39,19 @@ const Project = () => {
               <div className="card-front">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+
+                {/* Button for mobile (hidden on desktop via CSS) */}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn mobile-btn"
+                >
+                  🔗 View Project
+                </a>
               </div>
-              {/* Back side */}
+
+              {/* Back side (desktop only) */}
               <div className="card-back">
                 <h3>{project.title}</h3>
                 <a
