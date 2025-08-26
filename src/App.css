@@ -15,7 +15,8 @@ html {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap;
+  /* allow wrapping on small screens */
 }
 
 .Header-title {
@@ -76,33 +77,35 @@ html {
 /* 📱 Mobile Styles */
 @media (max-width: 768px) {
   .Menu {
-    /* flex-direction: row;   
-    flex-wrap: nowrap;     
-    gap: 0.8rem;           
-    width: 100%;
-    justify-content: flex-start; */
+    /* flex-direction: row; flex-wrap: nowrap; gap: 0.8rem; width: 100%; justify-content: flex-start; */
     display: none;
   }
 
   .Menu a {
-    font-size: 0.85rem;    /* reduce size */
+    font-size: 0.85rem;
+    /* reduce size */
     padding: 0.3rem 0;
   }
-  .HeaderforP{
-      position: sticky;
+
+  .HeaderforP {
+    position: sticky;
   }
+
   .HeaderforP h1 {
     text-align: center;
-    width: 100%;  /* center title */
+    width: 100%;
+    /* center title */
   }
 }
 
 @media (max-width: 480px) {
   .Menu {
-    gap: 0.6rem;           /* even tighter spacing */
+    gap: 0.6rem;
+    /* even tighter spacing */
   }
 
   .Menu a {
-    font-size: 0.75rem;    /* slightly smaller */
+    font-size: 0.75rem;
+    /* slightly smaller */
   }
 }
