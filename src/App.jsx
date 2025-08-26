@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
+import Footer from './components/Footer'; 
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -80,6 +81,9 @@ function App() {
       </section>
       <section id="contact" className="section">
         <Contact />
+      </section>
+      <section id="footer" className="section">
+        <Footer />
       </section>
     </>
   );
