@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +16,8 @@ html {
   align-items: center;
   padding: 0.5rem 1.5rem;
 
-  background: transparent; /* fully transparent at first */
+  background: transparent;
+  /* fully transparent at first */
   transition: background 0.4s ease, box-shadow 0.4s ease;
   border-bottom: none;
   box-shadow: none;
@@ -23,10 +25,12 @@ html {
 
 /* When scrolled: FULL solid header (not transparent) */
 .HeaderforP.scrolled {
-  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a); /* solid gradient */
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  /* solid gradient */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: none; /* disable blur */
+  backdrop-filter: none;
+  /* disable blur */
 }
 
 
@@ -92,6 +96,13 @@ html {
     display: none;
   }
 
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
   .Menu a {
     font-size: 0.85rem;
     /* reduce size */
@@ -99,20 +110,25 @@ html {
   }
 
   .HeaderforP {
-    position: sticky !important;
-    margin-top: -75px;
-    max-height: 5vh;
+    position: fixed; /* keep it fixed */
+    top: 0;
+    left: 0;
+    width: 100%; /* full width */
+    height: 20px; /* normal height */
+    margin-top: 0; /* remove negative margin */
+    padding: 0.5rem 1rem;
   }
 
   .HeaderforP h1 {
     text-align: center;
     width: 100%;
-  
+
     /* center title */
   }
-  .Header-title{
+
+  .Header-title {
     font-size: 1.2rem;
-    margin-top: 3.5px;
+    margin-top: 15px;
   }
 }
 
@@ -122,8 +138,55 @@ html {
     /* even tighter spacing */
   }
 
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
   .Menu a {
     font-size: 0.75rem;
     /* slightly smaller */
+  }
+}
+
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  margin-right: 25px;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1101;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .Menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .Menu.show {
+    display: flex;
+  }
+
+  .Menu a {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
   }
 }

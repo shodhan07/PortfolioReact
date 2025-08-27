@@ -6,10 +6,11 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // ✅ new state
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -53,13 +54,20 @@ function App() {
         <h1 className="Header-title">
           Shodhan A K <span>Portfolio</span>
         </h1>
-        <nav className="Menu">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#achievements">Achievements</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+
+        {/* ✅ Hamburger button (only shows in mobile via CSS) */}
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? "✖" : "☰"}
+        </div>
+
+        {/* ✅ Nav menu */}
+        <nav className={`Menu ${menuOpen ? "show" : ""}`}>
+          <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+          <a href="#achievements" onClick={() => setMenuOpen(false)}>Achievements</a>
+          <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
       </header>
 
