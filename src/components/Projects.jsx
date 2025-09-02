@@ -3,24 +3,24 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "Resume Builder",
-    description: "A web-based tool to create and download resumes.",
-    link: "https://github.com/shodhan07/resume-builder"
+    title: "RoomExpense Tracker",
+    description: "Room Expense Tracker helps users log daily expenses, split costs, and view clear summaries for easy and transparent money management.",
+    link: ""
   },
   {
-    title: "Music Player",
-    description: "A sleek music player built with web technologies.",
-    link: "https://github.com/shodhan07/music-player"
+    title: "XWeather",
+    description: "XWeather is an automated weather update app that fetches real-time weather data for a given location using a weather API and posts daily updates on X (Twitter) via the X API.",
+    link: ""
   },
   {
-    title: "To-Do List",
-    description: "Simple task management app using HTML, CSS & JS.",
-    link: "https://github.com/shodhan07/todo-list"
+    title: "Portfolio",
+    description: "A personal portfolio website showcasing my projects, skills, and achievements, built with a clean design to highlight my work in web development and problem-solving.",
+    link: ""
   },
   {
     title: "Hospital Management System",
     description: "Full-stack system to manage patients, doctors, and records.",
-    link: "https://github.com/shodhan07/hospital-management"
+    link: ""
   }
 ];
 

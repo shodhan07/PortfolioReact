@@ -11,7 +11,7 @@ const Achievements = () => {
     { title: "Data Structures and Algorithms Certificate", issuer: "Udemy", year: "2025", link: "https://www.udemy.com/certificate/dsa-example" },
     { title: "ServiceNow Certified App Developer", issuer: "ServiceNow", year: "2025", link: "https://www.servicenow.com/certificate-example" },
     { title: "Nintex K2 Automation IT Developer", issuer: "Nintex", year: "2025", link: "https://www.k2.com/certificate-example" },
-    { title: "Coming Soon", issuer: "", year: "", link: "#" },
+    { title: "Nintex K2 Citizen Developer", issuer: "Nintex", year: "2025", link: "http" },
     { title: "Coming Soon", issuer: "", year: "", link: "#" },
     { title: "Coming Soon", issuer: "", year: "", link: "#" },
   ];
@@ -21,6 +21,7 @@ const Achievements = () => {
       <h2 className="achievements-title">
         Certifications & <span>Achievements</span>
       </h2>
+      <br />
 
       <div className="carousel-wrapper">
         <button className="carousel-btn left" onClick={scrollLeft}>&#10094;</button>

@@ -48,15 +48,20 @@
 }
 
 /* Card */
+/* Card - Desktop */
+/* Card - Desktop */
 .achievement-card {
-  flex: 0 0 260px;
+  flex: 0 0 320px;   /* wider */
+  min-height: 280px; /* increase height */
   background: rgba(30, 41, 59, 0.9);
   border-radius: 18px;
-  padding: 25px 18px;
+  padding: 30px 22px;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   transition: transform 0.4s, box-shadow 0.4s;
 }
+
+
 
 /* Hover only for larger screens */
 @media (hover: hover) and (pointer: fine) {
@@ -136,25 +141,33 @@
 }
 
 /* Hide arrows on small screens */
+/* Mobile: Stack certificates vertically */
 @media (max-width: 768px) {
-  .carousel-btn {
-    display: none;
+  .achievements-carousel {
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    align-items: center;
+    /* center them */
+    gap: 20px;
+    overflow: visible;
+    /* remove scroll */
   }
 
   .achievement-card {
-    flex: 0 0 200px;
-    padding: 20px 15px;
+    flex: 0 0 auto;
+    /* allow natural size */
+    width: 100%;
+    max-width: 320px;
+    /* keep a nice width */
   }
 
-  .achievements-title {
-    font-size: 1.8rem;
-  }
-
-  .achievements {
-    min-height: 90vh;   
-    padding: 60px 15px; 
+  .carousel-btn {
+    display: none;
+    /* hide arrows */
   }
 }
+
 
 @media (max-width: 480px) {
   .achievement-card {
@@ -168,7 +181,7 @@
   }
 
   .achievements {
-    min-height: 90vh;   
-    padding: 45px 12px; 
+    min-height: 90vh;
+    padding: 45px 12px;
   }
 }
