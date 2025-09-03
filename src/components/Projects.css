@@ -105,10 +105,14 @@
 
 @media (max-width: 768px) {
   .project-card {
-    width: 90%;         /* smaller width so it won’t overflow */
-    max-width: 350px;   /* safe upper limit */
-    margin: 15px auto;  /* keep it centered */
-    height: 280px;      /* increase height only for mobile */
+    width: 90%;
+    /* smaller width so it won’t overflow */
+    max-width: 350px;
+    /* safe upper limit */
+    margin: 15px auto;
+    /* keep it centered */
+    height: 280px;
+    /* increase height only for mobile */
     box-sizing: border-box;
     padding-right: 31px;
   }
@@ -123,23 +127,30 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* always 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
+    /* always 2 cards per row */
     gap: 15px;
   }
 
   .project-card {
-    width: 100%;       /* take full width of grid cell */
-    max-width: 160px;  /* limit max width */
-    height: 300px;     /* taller cards */
-    perspective: none; /* disable 3D */
+    width: 100%;
+    /* take full width of grid cell */
+    max-width: 160px;
+    /* limit max width */
+    height: 300px;
+    /* taller cards */
+    perspective: none;
+    /* disable 3D */
   }
 
   .card-inner {
-    transform: none !important; /* no flip */
+    transform: none !important;
+    /* no flip */
   }
 
   .card-back {
-    display: none; /* hide back */
+    display: none;
+    /* hide back */
   }
 
   .card-front {
@@ -167,12 +178,18 @@
 /* 📱 Extra small screens */
 @media (max-width: 400px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
+    /* single column */
   }
 
   .project-card {
-    width: 100%; 
-    max-width: 100%; 
-    height: 320px; /* keep tall */
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+    /* keep tall */
+  }
+
+  .card-front h3 {
+    font-size: 1.3rem;
   }
 }
