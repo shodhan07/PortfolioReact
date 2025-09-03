@@ -173,6 +173,7 @@
   .achievement-card {
     flex: 0 0 160px;
     padding: 18px 12px;
+    min-height: 220px;
   }
 
   .achievements-title {

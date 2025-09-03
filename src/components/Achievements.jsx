@@ -11,9 +11,9 @@ const Achievements = () => {
     { title: "Data Structures and Algorithms Certificate", issuer: "Udemy", year: "2025", link: "https://www.udemy.com/certificate/dsa-example" },
     { title: "ServiceNow Certified App Developer", issuer: "ServiceNow", year: "2025", link: "https://www.servicenow.com/certificate-example" },
     { title: "Nintex K2 Automation IT Developer", issuer: "Nintex", year: "2025", link: "https://www.k2.com/certificate-example" },
-    { title: "Nintex K2 Citizen Developer", issuer: "Nintex", year: "2025", link: "http" },
-    { title: "Coming Soon", issuer: "", year: "", link: "#" },
-    { title: "Coming Soon", issuer: "", year: "", link: "#" },
+    { title: "Nintex Automation K2 Citizen Developer", issuer: "Nintex", year: "2025", link: "http" },
+    { title: "Certification of Participation in Tata Imagination Challenge 2024", issuer: "Unstop", year: "2024", link: "yo" },
+    { title: "Certification of Participation in Level 1: E-Commerce", issuer: "Unstop", year: "2024", link: "uo" },
   ];
 
   return (

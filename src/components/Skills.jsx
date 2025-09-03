@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.css";
+import CoLogo from "../components/CoLogo.svg";
 
 const skills = [
   {
@@ -34,6 +35,22 @@ const skills = [
     name: "MySQL",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
   },
+  {
+    name: "Copilot Studio",
+    logo: CoLogo,
+  },
+  {
+    name: "HTML",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  }
+  , {
+    name: "CSS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  }
+  , {
+    name: "GitHub",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  }
 ];
 
 function Skills() {

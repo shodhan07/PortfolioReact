@@ -5,17 +5,17 @@ const projects = [
   {
     title: "RoomExpense Tracker",
     description: "Room Expense Tracker helps users log daily expenses, split costs, and view clear summaries for easy and transparent money management.",
-    link: ""
+    link: "https://github.com/shodhan07/RoomExpenseTracker-Frontend"
   },
   {
     title: "XWeather",
     description: "XWeather is an automated weather update app that fetches real-time weather data for a given location using a weather API and posts daily updates on X (Twitter) via the X API.",
-    link: ""
+    link: "https://github.com/shodhan07/XWeatherApp"
   },
   {
     title: "Portfolio",
     description: "A personal portfolio website showcasing my projects, skills, and achievements, built with a clean design to highlight my work in web development and problem-solving.",
-    link: ""
+    link: "https://github.com/shodhan07/PortfolioReact"
   },
   {
     title: "Hospital Management System",
