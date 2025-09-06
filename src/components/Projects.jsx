@@ -10,7 +10,7 @@ const projects = [
   {
     title: "XWeather",
     description: "XWeather is an automated weather update app that fetches real-time weather data for a given location using a weather API and posts daily updates on X via the X API.",
-    link: "https://github.com/shodhan07/XWeatherApp"
+    link: "https://github.com/shodhan07/XWeatherJs"
   },
   {
     title: "Portfolio",
