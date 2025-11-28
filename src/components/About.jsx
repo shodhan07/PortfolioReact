@@ -22,7 +22,7 @@ function About() {
   const experience = [
     {
       year: "2025 - Present",
-      title: "Associate Analyst Merck",
+      title: "Associate Analyst at Merck",
       details: [
         "Worked on Agent creation in Copilot Studio",
         "Developed ServiceNow catalog items and scripts",

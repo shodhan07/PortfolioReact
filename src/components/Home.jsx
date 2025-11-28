@@ -56,7 +56,7 @@ function Home() {
             </div>
             <div className="stat">
               <span className="stat-num">Merck</span>
-              <span className="stat-label">Intern</span>
+              <span className="stat-label">Associate Analyst</span>
             </div>
             <div className="stat">
               <span className="stat-num">5+</span>
