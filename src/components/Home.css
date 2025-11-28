@@ -179,7 +179,7 @@
   display: grid;
   place-items: center;
 }
-.visual-card {
+/* .visual-card {
   width: min(500px, 95%);
   aspect-ratio: 4/3;
   border-radius: 22px;
@@ -191,7 +191,7 @@
   position: relative;
   overflow: hidden;
   animation: float 8s ease-in-out infinite;
-}
+} */
 .glow-circle {
   position: absolute;
   width: 200px;
