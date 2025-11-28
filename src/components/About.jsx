@@ -21,7 +21,16 @@ function About() {
 
   const experience = [
     {
-      year: "2024 - Present",
+      year: "2025 - Present",
+      title: "Associate Analyst Merck",
+      details: [
+        "Worked on Agent creation in Copilot Studio",
+        "Developed ServiceNow catalog items and scripts",
+        "Worked with REST APIs, JavaScript, HTML, CSS",
+      ],
+    },
+    {
+      year: "2024 - 2025",
       title: "Internship at Merck (Intern)",
       details: [
         "Worked on K2 workflows & automation",
